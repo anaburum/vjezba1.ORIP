@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vježba 1</title>
+</head>
+<body>
+    <h1>Vježba 1</h1>
+
+    <script>
+        // Pitaj korisnika za ime
+        var userName = prompt("Kako se zoveš?");
+
+        // Pitaj korisnika za broj godina
+        var userAge = prompt("Koliko ti je godina?");
+
+        // Provjeri jesu li uneseni podaci
+        if (userName && userAge) {
+            // Kreiraj rečenicu s korisnikovim imenom i godinama
+            var combinedSentence = "Pozdrav, " + userName + "! Imaš " + userAge + " godina. Ja sam Ana i imam 19 godina, drago mi je što smo se upoznali!";
+
+            // Prikazivanje rečenice u dokumentu
+            document.write("<p>" + combinedSentence + "</p>");
+        } else {
+            // Prikazivanje poruke o grešci ako korisnik nije unio podatke
+            document.write("<p>Niste unijeli ispravne podatke.</p>");
+        }
+    </script>
+</body>
+</html>
+
+
